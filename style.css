@@ -1,0 +1,145 @@
+/*
+bmw color scheme
+
+blue #638CB3
+black #1D1B1E
+gray #919598
+antiquewhite
+*/
+
+body {
+    background-color: #1D1B1E;
+    color: antiquewhite;
+    font-weight: 200;
+    font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+p {
+    font-size: large;
+    line-height: 2em;
+}
+
+h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+h2{
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.0rem;
+}
+
+h3{
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+h4{
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+
+
+.blue {
+    color: #638CB3;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    margin: 50px;
+    border: 5px solid antiquewhite;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.coffee-cups {
+    width: 200px;
+    height: auto;
+}
+
+.coffee-hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.small-coffee-pot {
+    width: 150px;
+    height: auto;
+}
+
+/*space mono classes
+.space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.space-mono-regular-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.space-mono-bold-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
+}
+*/
+
+/*space grotesk class
+
+300 to 700
+
+.space-grotesk-<uniquifier> {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*/
+
+/*
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
