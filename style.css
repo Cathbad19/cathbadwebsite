@@ -1,0 +1,143 @@
+:root {
+    --black: #272727;
+    --pink: #e56788;
+    /*--teal;*/
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+html {
+    font-size: 20px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+#splash-screen {
+    height: 100dvh;
+    width: 100%;
+    background-image: url("images/naoomi_1_alt.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.splash-screen-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 2rem; /* less space at the bottom */
+    box-sizing: border-box;
+}
+
+.splash-screen-text-h1,
+.splash-screen-text-h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.splash-screen-text-h1 {
+    font-size: 4rem;
+    color: var(--pink);
+}
+
+.splash-screen-text-h2 {
+    font-size: 2rem;
+    color: antiquewhite;
+    margin-top: 1rem;
+}
+
+nav {
+    padding: 1rem;
+    display: flex;
+    background-color: var(--black);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.off-screen-menu {
+    background-color: var(--black);
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    transition: all 0.3s ease;
+}
+
+.off-screen-menu.active {
+    right: 0;
+}
+
+.ham-menu {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+}
+
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: antiquewhite;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+}
+
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+    transform: translate(-50%, 50%) rotate(-45deg);
+}
+
+
+
+
+
